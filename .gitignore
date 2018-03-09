@@ -1,0 +1,2 @@
+# Cache, session files and logs (Symfony3)
+/build/*

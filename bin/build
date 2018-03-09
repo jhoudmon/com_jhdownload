@@ -1,0 +1,4 @@
+#!/bin/bash
+[[ -d build ]] && rm -rf build
+mkdir build
+zip -r build/com_jhdownload.zip admin index.html jhdownload.xml site
