@@ -3,17 +3,16 @@
 defined('_JEXEC') or die('Restricted access');
 
 JLog::addLogger(
-       array(
-            'text_file' => 'com_jhdownload.log.php'
-       ),
-           // Sets messages of all log levels to be sent to the file
-       JLog::ALL,
-           // The log category/categories which should be recorded in this file
-           // In this case, it's just the one category from our extension, still
-           // we need to put it inside an array
-       array('com_jhdownload')
-   );
-   JLog::add(JPATH_ROOT . $_SERVER['INIT_URI'], JLog::ERROR, 'com_jhdownload');
+   array(
+		'text_file' => 'com_jhdownload.log.php'
+   ),
+	   // Sets messages of all log levels to be sent to the file
+   JLog::ALL,
+	   // The log category/categories which should be recorded in this file
+	   // In this case, it's just the one category from our extension, still
+	   // we need to put it inside an array
+   array('com_jhdownload')
+);
 
 $chemin = JPATH_ROOT . $_SERVER['INIT_URI'];
 if (is_file($chemin)) {
